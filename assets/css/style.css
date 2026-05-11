@@ -316,6 +316,20 @@ p {
   align-self: center;
 }
 
+.origin__content {
+  display: grid;
+  gap: clamp(1rem, 2.6vw, 1.45rem);
+}
+
+.origin__content .eyebrow {
+  margin-bottom: 0;
+}
+
+.origin__story {
+  display: grid;
+  gap: 1rem;
+}
+
 .origin__content p:not(.eyebrow),
 .process__content > p,
 .section-heading p:not(.eyebrow),
