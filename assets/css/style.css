@@ -540,7 +540,7 @@ p {
   display: grid;
   gap: 1.25rem;
   width: 100%;
-  max-width: 31rem;
+  max-width: 34rem;
   border: 1px solid rgba(79, 47, 32, 0.22);
   border-radius: var(--radius);
   padding: clamp(1.5rem, 4vw, 2.2rem);
@@ -571,10 +571,15 @@ p {
 }
 
 .contact__detail a {
+  overflow-wrap: anywhere;
   text-decoration-color: rgba(79, 47, 32, 0.35);
   text-decoration-thickness: 1px;
   text-underline-offset: 0.18em;
   transition: color 180ms ease, text-decoration-color 180ms ease;
+}
+
+.contact__detail a[href^="mailto:"] {
+  font-size: clamp(1.08rem, 2.1vw, 1.38rem);
 }
 
 .contact__detail a:hover,
@@ -685,7 +690,7 @@ p {
   }
 
   .contact__inner {
-    grid-template-columns: minmax(0, 0.95fr) minmax(20rem, 0.72fr);
+    grid-template-columns: minmax(0, 0.95fr) minmax(22rem, 0.82fr);
   }
 
   .contact {
